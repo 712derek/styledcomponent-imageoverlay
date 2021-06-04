@@ -83,9 +83,9 @@ const HoverImage = () => {
     <>
       <Container>
         {details.map((item, index) => (
-          <Content>
+          <Content key={index}>
             <ContentOverlay />
-            <ContentDetails key={index}>
+            <ContentDetails>
               <h3>{item.title}</h3>
               <p>{item.text}</p>
             </ContentDetails>
